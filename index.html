@@ -118,6 +118,7 @@
   .card:nth-child(4) { animation-delay: 0.55s; }
   .card:nth-child(5) { animation-delay: 0.7s; }
   .card:nth-child(6) { animation-delay: 0.85s; }
+  .card:nth-child(7) { animation-delay: 1s; }
 
   @keyframes fadeUp {
     to { opacity: 1; transform: translateY(0); }
@@ -138,6 +139,7 @@
   .card-linfodrenaggio .card-accent { background: #9b7fb8; }
   .card-anticellulite .card-accent { background: #c4607a; }
   .card-kobido .card-accent { background: #c4936a; }
+  .card-miofasciale .card-accent { background: #5a8a7a; }
 
   .card-body {
     padding: 36px 40px 36px 36px;
@@ -276,12 +278,12 @@
     margin-top: 32px;
     text-align: center;
     padding-top: 36px;
-    border-top: 1px solid var(--earth);
+    border-top: 1px solid var(--warm);
   }
 
   footer p {
     font-size: 0.82rem;
-    color: var(--earth);
+    color: #8b7355;
     font-weight: 300;
     line-height: 1.7;
     max-width: 500px;
@@ -397,7 +399,7 @@
     </div>
 
     <!-- AYURVEDICO -->
-    <div class="card card-ayurvedico">
+    <div class="card card-ayurvedico" style="opacity: 0.75;">
       <div class="card-accent"></div>
       <div class="card-body">
         <div class="card-header">
@@ -408,6 +410,7 @@
             <p class="card-tagline">Abhyanga — il nutrimento della tradizione indiana</p>
           </div>
         </div>
+        <div style="display:inline-block; background:#e8ddd0; color:#8b6e52; font-size:0.7rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; padding: 5px 12px; border-radius:2px; margin-bottom:16px;">⏸ Momentaneamente non disponibile</div>
         <p class="card-description">
           L'Abhyanga è il massaggio cardine dell'Ayurveda, la millenaria medicina tradizionale indiana. 
           Si esegue con abbondante olio caldo — scelto in base alla costituzione della persona 
@@ -571,11 +574,56 @@
       </div>
     </div>
 
+    <!-- MIOFASCIALE -->
+    <div class="card card-miofasciale">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <div class="card-header">
+          <div class="card-icon">🔍</div>
+          <div class="card-titles">
+            <p class="card-number">07 —</p>
+            <h2 class="card-name">Massaggio Miofasciale</h2>
+            <p class="card-tagline">Sciogliere le tensioni profonde del tessuto connettivo</p>
+          </div>
+        </div>
+        <p class="card-description">
+          Il massaggio miofasciale lavora sulla fascia — il tessuto connettivo che avvolge 
+          e collega muscoli, tendini e organi in tutto il corpo. Attraverso pressioni lente, 
+          sostenute e precise, mira a sciogliere le tensioni e le aderenze accumulate 
+          in profondità, spesso radicate nel tempo a causa di posture scorrette, stress 
+          o traumi fisici. Il trattamento può essere condotto su tutto il corpo 
+          o concentrato su zone specifiche, a seconda delle necessità del cliente. 
+          La sensazione durante il lavoro è intensa ma non dolorosa: è il tessuto stesso 
+          che gradualmente cede e si riorganizza.
+        </p>
+        <div class="pillars">
+          <div class="pillar">
+            <p class="pillar-label">Intensità</p>
+            <p class="pillar-value">Media – Profonda</p>
+          </div>
+          <div class="pillar">
+            <p class="pillar-label">Durata tipica</p>
+            <p class="pillar-value">45 – 50 min</p>
+          </div>
+          <div class="pillar">
+            <p class="pillar-label">Effetto principale</p>
+            <p class="pillar-value">Scioglimento fasciale</p>
+          </div>
+        </div>
+        <div class="ideal-for">
+          <strong>Ideale se…</strong>
+          senti tensioni croniche o rigidità che non passano con i massaggi classici, 
+          hai zone del corpo particolarmente bloccate o doloranti, 
+          o vuoi un lavoro in profondità che vada oltre il muscolo.
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div class="new-note">
-    <span class="label">In arrivo — Agosto</span>
-    <span class="text">Massaggio Miofasciale</span>
+    <span class="label">In arrivo — inizio Settembre</span>
+    <span class="text">Massaggio Decontratturante</span>
   </div>
 
   <footer>
