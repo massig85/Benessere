@@ -140,7 +140,6 @@
   .card-linfodrenaggio .card-accent { background: #9b7fb8; }
   .card-anticellulite .card-accent { background: #c4607a; }
   .card-kobido .card-accent { background: #c4936a; }
-  .card-miofasciale .card-accent { background: #5a8a7a; }
   .card-decontratturante .card-accent { background: #7a6e8a; }
 
   .card-body {
@@ -276,6 +275,76 @@
     font-weight: 400;
   }
 
+  .cta {
+    margin-top: 48px;
+    text-align: center;
+    padding: 40px 32px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 4px 32px rgba(61,43,31,0.07);
+  }
+
+  .cta-kicker {
+    font-size: 0.65rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--stone);
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+
+  .cta h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    color: var(--deep);
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+
+  .cta h2 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .cta p {
+    font-size: 0.92rem;
+    color: var(--earth);
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 420px;
+    margin: 0 auto 28px;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 2px;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 20px rgba(181,121,58,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(181,121,58,0.4);
+  }
+
+  .cta-note {
+    margin-top: 16px;
+    font-size: 0.78rem;
+    color: var(--stone);
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
   footer {
     margin-top: 32px;
     text-align: center;
@@ -330,10 +399,9 @@
           È il massaggio più conosciuto e diffuso al mondo. Nato in Europa e codificato 
           nel diciannovesimo secolo, lavora sull'intero corpo attraverso le tecniche manuali 
           classiche — sfioramenti, impastamenti, frizioni, vibrazioni e percussioni — 
-          che seguono sempre la direzione del cuore. L'obiettivo è sciogliere le tensioni muscolari, 
-          migliorare la circolazione e indurre un profondo senso di calma. 
-          Si usa olio o crema, la pressione è modulabile da leggera a media, 
-          e si può personalizzare facilmente sulle esigenze di chi lo riceve.
+          adattate alle diverse zone del corpo. La pressione può essere modulata in base 
+          alle esigenze della persona, in un trattamento pensato soprattutto per favorire 
+          rilassamento e distensione muscolare.
         </p>
         <div class="pillars">
           <div class="pillar">
@@ -346,7 +414,7 @@
           </div>
           <div class="pillar">
             <p class="pillar-label">Effetto principale</p>
-            <p class="pillar-value">Rilassamento muscolare</p>
+            <p class="pillar-value">Rilassamento e distensione</p>
           </div>
         </div>
         <div class="ideal-for">
@@ -374,9 +442,9 @@
           di guarigione e trasformazione. L'operatore lavora con grandi movimenti ondulatori 
           che coinvolgono l'intero arto superiore — avambracci, gomiti, mani — muovendosi 
           attorno al corpo come le onde del mare. La sensazione è quella di essere 
-          avvolti da un flusso continuo e senza interruzioni. Oltre al corpo fisico, 
-          il Lomi Lomi agisce su emozioni e blocchi energetici: è un'esperienza 
-          profondamente rilassante e spesso liberatoria.
+          avvolti da un flusso continuo e senza interruzioni. Nella tradizione hawaiana 
+          il Lomi Lomi non riguarda soltanto il lavoro corporeo, ma può essere vissuto 
+          anche come esperienza di connessione tra corpo, mente ed emozioni.
         </p>
         <div class="pillars">
           <div class="pillar">
@@ -389,7 +457,7 @@
           </div>
           <div class="pillar">
             <p class="pillar-label">Effetto principale</p>
-            <p class="pillar-value">Liberazione emotiva</p>
+            <p class="pillar-value">Rilassamento profondo e fluidità</p>
           </div>
         </div>
         <div class="ideal-for">
@@ -401,7 +469,7 @@
     </div>
 
     <!-- AYURVEDICO -->
-    <div class="card card-ayurvedico" style="opacity: 0.75;">
+    <div class="card card-ayurvedico">
       <div class="card-accent"></div>
       <div class="card-body">
         <div class="card-header">
@@ -412,14 +480,13 @@
             <p class="card-tagline">Abhyanga — il nutrimento della tradizione indiana</p>
           </div>
         </div>
-        <div style="display:inline-block; background:#e8ddd0; color:#8b6e52; font-size:0.7rem; font-weight:500; letter-spacing:0.15em; text-transform:uppercase; padding: 5px 12px; border-radius:2px; margin-bottom:16px;">⏸ Momentaneamente non disponibile</div>
         <p class="card-description">
-          L'Abhyanga è il massaggio cardine dell'Ayurveda, la millenaria medicina tradizionale indiana. 
-          Si esegue con abbondante olio caldo — scelto in base alla costituzione della persona 
-          (il cosiddetto <em>dosha</em>) per calmare la mente e ridare stabilità al corpo. 
-          Non lavora solo sui muscoli ma favorisce la disintossicazione e restituisce armonia 
-          tra corpo e mente, andando a stimolare i flussi energetici e i punti vitali 
-          della tradizione indiana. È un'esperienza lenta, caldo-avvolgente, profondamente radicante.
+          L'Abhyanga è una pratica tradizionale dell'Ayurveda, la millenaria medicina indiana, 
+          che utilizza abbondante olio caldo e movimenti lenti e avvolgenti sull'intero corpo. 
+          Nella tradizione ayurvedica la scelta dell'olio e delle modalità del trattamento 
+          può essere associata alla costituzione individuale (il cosiddetto <em>dosha</em>). 
+          È un'esperienza calda, lenta e profondamente radicante, pensata per favorire 
+          una sensazione di rilassamento, nutrimento della pelle e benessere diffuso.
         </p>
         <div class="pillars">
           <div class="pillar">
@@ -432,14 +499,14 @@
           </div>
           <div class="pillar">
             <p class="pillar-label">Effetto principale</p>
-            <p class="pillar-value">Riequilibrio energetico</p>
+            <p class="pillar-value">Rilassamento e nutrimento</p>
           </div>
         </div>
         <div class="ideal-for">
           <strong>Ideale se…</strong>
           ti senti a pezzi, stressato, o "fuori asse"; se sei curioso delle tradizioni orientali; 
-          se hai la pelle secca o un sistema nervoso sovra-eccitato; se vuoi un'esperienza 
-          che nutra davvero, non solo rilassi.
+          se hai la pelle secca o senti il bisogno di rallentare e ritrovare una sensazione di calma; 
+          se vuoi un'esperienza che nutra davvero, non solo rilassi.
         </div>
       </div>
     </div>
@@ -458,11 +525,11 @@
         </div>
         <p class="card-description">
           Il linfodrenaggio secondo il metodo Vodder è una tecnica manuale delicata, 
-          nata in Europa nel Novecento, pensata per stimolare la circolazione linfatica 
-          e favorire l'eliminazione dei liquidi in eccesso. I movimenti sono lenti, leggeri 
-          e ritmici, eseguiti con una pressione minima che segue il percorso dei vasi linfatici 
-          verso i linfonodi. Non è un massaggio muscolare: l'obiettivo è alleggerire, 
-          decongestionare e ridare una sensazione di freschezza a gambe, braccia e viso.
+          nata in Europa nel Novecento. I movimenti sono lenti, leggeri e ritmici, 
+          eseguiti con una pressione minima che segue il percorso dei vasi linfatici 
+          verso i linfonodi. Non è un massaggio muscolare: l'obiettivo è favorire 
+          una sensazione di leggerezza e decongestione a gambe, braccia e viso, 
+          in un'esperienza particolarmente silenziosa e rilassante.
         </p>
         <div class="pillars">
           <div class="pillar">
@@ -475,14 +542,13 @@
           </div>
           <div class="pillar">
             <p class="pillar-label">Effetto principale</p>
-            <p class="pillar-value">Drenaggio e leggerezza</p>
+            <p class="pillar-value">Leggerezza e decongestione</p>
           </div>
         </div>
         <div class="ideal-for">
           <strong>Ideale se…</strong>
-          senti gambe o braccia gonfie e pesanti, soffri di ritenzione idrica, 
-          cerchi un trattamento molto dolce e rilassante, o vuoi semplicemente 
-          una sensazione di leggerezza diffusa.
+          senti gambe o braccia pesanti, cerchi un trattamento molto delicato, 
+          o desideri una sensazione di leggerezza e rilassamento diffuso.
         </div>
       </div>
     </div>
@@ -500,13 +566,12 @@
           </div>
         </div>
         <p class="card-description">
-          Il trattamento anticellulite manuale agisce direttamente sui tessuti profondi 
-          attraverso manovre specifiche — frizioni, impastamenti profondi, drenaggi localizzati — 
-          pensate per stimolare la microcircolazione, rompere i depositi di grasso localizzato 
-          e migliorare l'aspetto della pelle a buccia d'arancia. Senza l'uso di apparecchiature, 
-          il lavoro manuale permette una modulazione precisa e personalizzata in base alle zone 
-          da trattare e alla sensibilità della persona. Il risultato nel tempo è una pelle 
-          più tonica, levigata e un corpo più definito.
+          Il trattamento anticellulite manuale utilizza manovre specifiche — frizioni, 
+          impastamenti, mobilizzazioni e tecniche di drenaggio — con l'obiettivo di lavorare 
+          sui tessuti delle zone trattate e favorire una sensazione di tonicità e leggerezza. 
+          Senza l'uso di apparecchiature, il lavoro manuale permette una modulazione precisa 
+          e personalizzata in base alla zona e alla sensibilità della persona. 
+          Può essere inserito in un percorso continuativo dedicato alla cura dell'aspetto della pelle.
         </p>
         <div class="pillars">
           <div class="pillar">
@@ -519,14 +584,14 @@
           </div>
           <div class="pillar">
             <p class="pillar-label">Effetto principale</p>
-            <p class="pillar-value">Rimodellante e tonificante</p>
+            <p class="pillar-value">Cura e tono della pelle</p>
           </div>
         </div>
         <div class="ideal-for">
           <strong>Ideale se…</strong>
-          vuoi agire su accumuli di grasso localizzato o pelle a buccia d'arancia, 
-          cerchi un trattamento mirato su cosce, glutei o addome, 
-          o desideri un percorso rimodellante progressivo nel tempo.
+          vuoi dedicare attenzione a zone specifiche come cosce, glutei o addome, 
+          cerchi un trattamento mirato e personalizzato per la cura dell'aspetto della pelle, 
+          o desideri intraprendere un percorso continuativo di benessere localizzato.
         </div>
       </div>
     </div>
@@ -540,18 +605,16 @@
           <div class="card-titles">
             <p class="card-number">06 —</p>
             <h2 class="card-name">Kobido</h2>
-            <p class="card-tagline">Il massaggio viso giapponese — lifting naturale</p>
+            <p class="card-tagline">Il massaggio viso giapponese</p>
           </div>
         </div>
         <p class="card-description">
           Il Kobido è un'antica arte giapponese del massaggio facciale, tramandata per secoli 
           come tecnica di bellezza e benessere. Attraverso manovre rapide e precise — 
           sfioramenti, pizzicamenti, percussioni leggere e movimenti ondulatori — 
-          stimola la muscolatura del viso, riattiva la circolazione e favorisce 
-          la produzione di collagene. Il risultato è un viso visibilmente più tonico, 
-          luminoso e disteso, senza l'uso di aghi o strumenti. 
-          È spesso chiamato il "lifting naturale" per la sua capacità di ridefinire 
-          i contorni del viso nel tempo.
+          il trattamento lavora sulla muscolatura e sui tessuti superficiali del viso, 
+          lasciando una sensazione di distensione e una pelle dall'aspetto più luminoso. 
+          Un momento di cura dedicato interamente al viso, senza l'uso di aghi o strumenti.
         </p>
         <div class="pillars">
           <div class="pillar">
@@ -564,7 +627,7 @@
           </div>
           <div class="pillar">
             <p class="pillar-label">Effetto principale</p>
-            <p class="pillar-value">Tonico e luminosità</p>
+            <p class="pillar-value">Distensione e luminosità</p>
           </div>
         </div>
         <div class="ideal-for">
@@ -576,51 +639,6 @@
       </div>
     </div>
 
-    <!-- MIOFASCIALE -->
-    <div class="card card-miofasciale">
-      <div class="card-accent"></div>
-      <div class="card-body">
-        <div class="card-header">
-          <div class="card-icon">🔍</div>
-          <div class="card-titles">
-            <p class="card-number">07 —</p>
-            <h2 class="card-name">Massaggio Miofasciale</h2>
-            <p class="card-tagline">Sciogliere le tensioni profonde del tessuto connettivo</p>
-          </div>
-        </div>
-        <p class="card-description">
-          Il massaggio miofasciale lavora sulla fascia — il tessuto connettivo che avvolge 
-          e collega muscoli, tendini e organi in tutto il corpo. Attraverso pressioni lente, 
-          sostenute e precise, mira a sciogliere le tensioni e le aderenze accumulate 
-          in profondità, spesso radicate nel tempo a causa di posture scorrette, stress 
-          o traumi fisici. Il trattamento può essere condotto su tutto il corpo 
-          o concentrato su zone specifiche, a seconda delle necessità del cliente. 
-          La sensazione durante il lavoro è intensa ma non dolorosa: è il tessuto stesso 
-          che gradualmente cede e si riorganizza.
-        </p>
-        <div class="pillars">
-          <div class="pillar">
-            <p class="pillar-label">Intensità</p>
-            <p class="pillar-value">Media – Profonda</p>
-          </div>
-          <div class="pillar">
-            <p class="pillar-label">Durata tipica</p>
-            <p class="pillar-value">45 – 50 min</p>
-          </div>
-          <div class="pillar">
-            <p class="pillar-label">Effetto principale</p>
-            <p class="pillar-value">Scioglimento fasciale</p>
-          </div>
-        </div>
-        <div class="ideal-for">
-          <strong>Ideale se…</strong>
-          senti tensioni croniche o rigidità che non passano con i massaggi classici, 
-          hai zone del corpo particolarmente bloccate o doloranti, 
-          o vuoi un lavoro in profondità che vada oltre il muscolo.
-        </div>
-      </div>
-    </div>
-
     <!-- DECONTRATTURANTE -->
     <div class="card card-decontratturante">
       <div class="card-accent"></div>
@@ -628,19 +646,19 @@
         <div class="card-header">
           <div class="card-icon">⚡</div>
           <div class="card-titles">
-            <p class="card-number">08 —</p>
+            <p class="card-number">07 —</p>
             <h2 class="card-name">Massaggio Decontratturante</h2>
             <p class="card-tagline">Sciogliere i nodi, liberare il corpo</p>
           </div>
         </div>
         <p class="card-description">
-          Il massaggio decontratturante agisce in profondità sui muscoli contratti, 
-          quei nodi dolorosi che si formano per stress, posture scorrette, sforzi fisici 
-          o tensioni accumulate nel tempo. Attraverso pressioni intense e mirate — 
-          frizioni profonde, impastamenti e tecniche di compressione — lavora 
-          direttamente sul punto di tensione per scioglierlo e ripristinare 
-          l'elasticità muscolare. È un massaggio che può essere localmente intenso, 
-          ma seguito da una sensazione di profondo sollievo e leggerezza.
+          Il massaggio decontratturante è pensato per lavorare in profondità sulle zone 
+          di maggiore tensione muscolare, che possono essere associate a stress, posture 
+          mantenute a lungo, attività fisica o tensioni accumulate nel tempo. 
+          Attraverso pressioni intense e mirate — frizioni profonde, impastamenti 
+          e tecniche di compressione — lavora sulla zona di tensione per favorire 
+          una sensazione di distensione e mobilità. È un massaggio che può essere 
+          localmente intenso, ma spesso seguito da una piacevole sensazione di sollievo e leggerezza.
         </p>
         <div class="pillars">
           <div class="pillar">
@@ -653,14 +671,14 @@
           </div>
           <div class="pillar">
             <p class="pillar-label">Effetto principale</p>
-            <p class="pillar-value">Scioglimento muscolare</p>
+            <p class="pillar-value">Distensione delle tensioni</p>
           </div>
         </div>
         <div class="ideal-for">
           <strong>Ideale se…</strong>
-          hai nodi muscolari persistenti o zone particolarmente contratte, 
-          soffri di tensioni a collo, spalle o schiena, pratichi sport o svolgi 
-          un lavoro fisicamente impegnativo, o cerchi un sollievo rapido e mirato.
+          hai zone particolarmente contratte, senti tensione a collo, spalle o schiena, 
+          pratichi sport o svolgi un lavoro fisicamente impegnativo, 
+          o cerchi un trattamento più intenso e mirato.
         </div>
       </div>
     </div>
@@ -670,6 +688,14 @@
   <div class="new-note">
     <span class="label">In arrivo — Ottobre</span>
     <span class="text">Massaggio Californiano</span>
+  </div>
+
+  <div class="cta">
+    <p class="cta-kicker">Prenota il tuo momento</p>
+    <h2>Pronto a prenderti<br>cura di <em>te stesso?</em></h2>
+    <p>Scegli il trattamento che ti incuriosisce di più e contattami — ti raggiungo dove preferisci, a Brescia e dintorni. Il primo passo è semplice.</p>
+    <a class="cta-btn" href="https://wa.me/INSERISCI_QUI_IL_TUO_NUMERO" target="_blank">Scrivimi su WhatsApp</a>
+    <p class="cta-note">Rispondo entro 24 ore · Disponibile su appuntamento</p>
   </div>
 
   <footer>
